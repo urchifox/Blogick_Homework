@@ -1,0 +1,141 @@
+/* --- БАЗОВЫЕ --- */
+
+body {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 170%; /* or 31px */
+    color: #000000;
+
+    margin: 0 auto;
+}
+
+.container-1200 {
+    width: 1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container-700 {
+    width: 700px;
+    margin: 0 auto;
+}
+
+
+/* --- ШАПКА --- */
+
+.main-header {
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header::after {
+    content: "";
+    z-index: -1;
+    height: 78px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 1200px;
+    box-shadow:  0px 4px 20px rgba(35, 35, 36, 0.15);
+}
+
+ .main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 78px;
+    padding: 0;
+    margin: 0;
+    width: 896px;
+}
+
+.main-nav__logo:hover {
+    opacity: 0.6;
+}
+.main-nav__logo:active,
+.main-nav__logo:focus-visible {
+    color: black;
+    opacity: 0.4;
+}
+
+.menu {
+    min-width: 528px;
+    max-width: 800px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0px 44px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.menu-item a {
+    padding: 5px;
+    font-size: 13px;
+    line-height: 24px;
+    /* identical to box height, or 185% */
+    
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    
+    text-decoration: none;
+    cursor: pointer;
+
+    position: relative;
+
+    /* outline: auto; */
+}
+.menu-item a:not([href])::after {
+    content: "";
+    position: absolute;
+    top: 48%;
+    /* bottom: 50%; */
+    left: -4px;
+    right: -4px;
+    height: 1.5px;
+    /* width: 150%; */
+    background-color: #000000;
+}
+.menu-item a:visited {
+    color: black;
+}
+.menu-item a:hover,
+.menu-item a:focus-visible {
+    color: black;
+    opacity: 0.6;
+    border-bottom: #000000 1px solid;
+}
+.menu-item a:active {
+    color: black;
+    opacity: 0.4;
+    border-bottom: rgba(0, 0, 0, 0.5) 1px solid;
+}
+
+.phone {
+    width: 160px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 32px;
+    text-decoration: none;
+    color: #000000;
+} 
+.phone:hover {
+    opacity: 0.6;
+}
+.phone:active,
+.phone:focus-visible {
+    color: black;
+    opacity: 0.4;
+}
+
+/* --- ОСНОВНОЙ БЛОК --- */
+
+/* --- ПОДВАЛ --- */
