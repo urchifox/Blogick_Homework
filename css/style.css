@@ -9,12 +9,15 @@ body {
     color: #000000;
 
     margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
 }
 
 .container-1200 {
     width: 1170px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .container-700 {
@@ -30,6 +33,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 58px;
 }
 .main-header::after {
     content: "";
@@ -50,9 +54,13 @@ body {
     height: 78px;
     padding: 0;
     margin: 0;
-    width: 896px;
+    width: 900px;
 }
 
+.main-nav__logo {
+    display: block;
+    padding-top: 10px;
+}
 .main-nav__logo:hover {
     opacity: 0.6;
 }
@@ -70,7 +78,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 0px 44px;
+    gap: 0px 40px;
 
     list-style: none;
     padding: 0;
@@ -78,7 +86,7 @@ body {
 }
 
 .menu-item a {
-    padding: 5px;
+    padding: 5px 0;
     font-size: 13px;
     line-height: 24px;
     /* identical to box height, or 185% */
@@ -87,7 +95,6 @@ body {
     text-transform: uppercase;
     
     text-decoration: none;
-    cursor: pointer;
 
     position: relative;
 
@@ -107,25 +114,32 @@ body {
 .menu-item a:visited {
     color: black;
 }
-.menu-item a:hover,
-.menu-item a:focus-visible {
+.menu-item a[href]:hover,
+.menu-item a[href]:focus-visible {
     color: black;
     opacity: 0.6;
     border-bottom: #000000 1px solid;
 }
-.menu-item a:active {
+.menu-item a[href]:active {
     color: black;
     opacity: 0.4;
     border-bottom: rgba(0, 0, 0, 0.5) 1px solid;
 }
 
 .phone {
-    width: 160px;
     text-align: right;
     font-size: 16px;
     line-height: 32px;
     text-decoration: none;
     color: #000000;
+    position: relative;
+
+    padding: 0 5px 0 25px;
+    margin-right: -5px;
+
+    background-image: url(../img/phone-icon.svg);
+    background-repeat: no-repeat;
+    background-position: 5px 50%;
 } 
 .phone:hover {
     opacity: 0.6;
@@ -138,4 +152,62 @@ body {
 
 /* --- ОСНОВНОЙ БЛОК --- */
 
+main {
+    padding-bottom: 166px;
+}
+
 /* --- ПОДВАЛ --- */
+
+.main-footer {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* outline: auto; */
+}
+
+.footer-nav-list {
+    /* min-width: 528px;
+    max-width: 800px; */
+    width: 1151px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px 40px;
+
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+.footer-nav-item a {
+    padding: 5px 0;
+    font-size: 13px;
+    line-height: 24px;
+    /* identical to box height, or 185% */
+    
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    
+    text-decoration: none;
+}
+.footer-nav-item a:visited {
+    color: black;
+}
+.footer-nav-item a[href]:hover,
+.footer-nav-item a[href]:focus-visible {
+    color: black;
+    opacity: 0.6;
+    border-bottom: #000000 1px solid;
+}
+.footer-nav-item a[href]:active {
+    color: black;
+    opacity: 0.4;
+    border-bottom: rgba(0, 0, 0, 0.5) 1px solid;
+}
