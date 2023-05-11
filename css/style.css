@@ -25,129 +25,25 @@ body {
     margin: 0 auto;
 }
 
-
-/* --- ШАПКА --- */
-
-.main-header {
-    height: 78px;
+.columns-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 58px;
-}
-.main-header::after {
-    content: "";
-    z-index: -1;
-    height: 78px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    min-width: 1200px;
-    box-shadow:  0px 4px 20px rgba(35, 35, 36, 0.15);
 }
 
- .main-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 78px;
-    padding: 0;
-    margin: 0;
-    width: 900px;
-}
-
-.main-nav__logo {
-    display: block;
-    padding-top: 10px;
-}
-.main-nav__logo:hover {
-    opacity: 0.6;
-}
-.main-nav__logo:active,
-.main-nav__logo:focus-visible {
-    color: black;
-    opacity: 0.4;
-}
-
-.menu {
-    min-width: 528px;
-    max-width: 800px;
-
+.three-dots {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    gap: 0px 40px;
-
-    list-style: none;
-    padding: 0;
-    margin: 0; 
+    justify-content: center;
+    gap: 15px;
+    margin: 20px;
 }
-
-.menu-item a {
-    padding: 5px 0;
-    font-size: 13px;
-    line-height: 24px;
-    /* identical to box height, or 185% */
-    
-    letter-spacing: 0.13em;
-    text-transform: uppercase;
-    
-    text-decoration: none;
-
-    position: relative;
-
-    /* outline: auto; */
-}
-.menu-item a:not([href])::after {
-    content: "";
-    position: absolute;
-    top: 48%;
-    /* bottom: 50%; */
-    left: -4px;
-    right: -4px;
-    height: 1.5px;
-    /* width: 150%; */
-    background-color: #000000;
-}
-.menu-item a:visited {
-    color: black;
-}
-.menu-item a[href]:hover,
-.menu-item a[href]:focus-visible {
-    color: black;
-    opacity: 0.6;
-    border-bottom: #000000 1px solid;
-}
-.menu-item a[href]:active {
-    color: black;
-    opacity: 0.4;
-    border-bottom: rgba(0, 0, 0, 0.5) 1px solid;
-}
-
-.phone {
-    text-align: right;
-    font-size: 16px;
-    line-height: 32px;
-    text-decoration: none;
-    color: #000000;
-    position: relative;
-
-    padding: 0 5px 0 25px;
-    margin-right: -5px;
-
-    background-image: url(../img/phone-icon.svg);
-    background-repeat: no-repeat;
-    background-position: 5px 50%;
-} 
-.phone:hover {
-    opacity: 0.6;
-}
-.phone:active,
-.phone:focus-visible {
-    color: black;
-    opacity: 0.4;
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #D7D9DF;;
 }
 
 /* --- ОСНОВНОЙ БЛОК --- */
@@ -156,58 +52,173 @@ main {
     padding-bottom: 166px;
 }
 
-/* --- ПОДВАЛ --- */
 
-.main-footer {
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* outline: auto; */
-}
+/* --- ХЛЕБНЫЕ КРОШКИ --- */
 
-.footer-nav-list {
-    /* min-width: 528px;
-    max-width: 800px; */
-    width: 1151px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0px 40px;
-
+.breadcrumbs-list {
     list-style: none;
     padding: 0;
-    margin: 0; 
+    margin: 0;
+    margin-bottom: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    font-size: 12px;
+    line-height: 150%;
+    /* identical to box height, or 18px */
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
-.footer-nav-item a {
-    padding: 5px 0;
-    font-size: 13px;
-    line-height: 24px;
-    /* identical to box height, or 185% */
-    
-    letter-spacing: 0.13em;
-    text-transform: uppercase;
-    
+.breadcrumb {
+    padding-right: 5px;
+}
+.breadcrumb:not(:last-child)::after {
+    content: "/";
+}
+
+.breadcrumb a {
     text-decoration: none;
 }
-.footer-nav-item a:visited {
+.breadcrumb a:visited {
     color: black;
 }
-.footer-nav-item a[href]:hover,
-.footer-nav-item a[href]:focus-visible {
+.breadcrumb a[href]:hover,
+.breadcrumb a[href]:focus-visible {
     color: black;
     opacity: 0.6;
     border-bottom: #000000 1px solid;
 }
-.footer-nav-item a[href]:active {
+.breadcrumb a[href]:active {
     color: black;
     opacity: 0.4;
     border-bottom: rgba(0, 0, 0, 0.5) 1px solid;
 }
+
+
+/* --- ШАПКА СТАТЬИ --- */
+
+.article-header_container {
+    position: relative;
+}
+
+.lead-pic {
+    display: block;
+    margin-bottom: 30px;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%) ;
+    width: 656px;
+    padding: 20px 0px;
+    margin: 0 auto;
+    
+    font-family: 'Cormorant', 'Times New Roman', serif;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 150%; /* or 60px */
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+    background-color: white;
+}
+
+
+
+.meta-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+[class^="meta-item"] {
+    font-size: 16px;
+    line-height: 170%;
+    padding-left: 35px;
+
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+.meta-item-date {
+    background-image: url("../img/date-icon.svg");
+}
+.meta-item-time {
+    background-image: url("../img/time-icon.svg");
+}
+.meta-item-views {
+    background-image: url("../img/views-icon.svg");
+}
+
+
+.lead b {
+    font-weight: 600;
+}
+
+
+/* --- СТАТЬЯ --- */
+
+.rules-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    counter-reset: rules;
+    /* outline: auto; */
+}
+
+.rule-item {
+    counter-increment: rule;
+    position: relative;
+}
+
+.rule-item::before {
+    content: counter(rule);
+    position: absolute;
+    top: -36px;
+    left: 235px; 
+
+    font-family: 'Cormorant', 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 65px;
+    line-height: 150%;
+}
+
+
+.post-heading {
+    font-family: 'Cormorant', 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 150%;
+
+    margin: 67px 0 15px 0;
+    padding: 0 0 0 64px;
+}
+
+.post-text {
+    margin-bottom: 30px;
+}
+
+.post-pic {
+    display: block;
+}
+
+.post-text_aside {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    width: 327px;
+}
+
