@@ -1,0 +1,44 @@
+.restaurants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F1F1F2;
+    width: 258px;
+    float: right;
+    margin-left: 15px;
+    border-radius: 0 60px 0 60px;
+    padding: 20px 0;
+}
+.restaurants p {
+    font-family: 'Cormorant', 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
+}
+.restaurants-img {
+    margin: 16px 0 5px 0;
+}
+.restaurants img {
+    display: block;
+    border-radius: 50%;
+    border:  #6BB9B5 5px solid;
+    margin: 0px 20px;
+    position: relative;
+}
+
+.restaurants__next-btn {
+    background-image: url("../img/arrow-short.svg");
+    width: 20px;
+    height: 10px;
+    background-size: 20px 10px;
+
+}
+.restaurants__previous-btn {
+    background-image: url("../img/arrow-short.svg");
+    width: 20px;
+    height: 10px;
+    background-size: 20px 10px;
+    transform: rotate(180deg);
+}

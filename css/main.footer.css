@@ -33,23 +33,6 @@
     font-size: 13px;
     line-height: 24px;
     /* identical to box height, or 185% */
-    
     letter-spacing: 0.13em;
     text-transform: uppercase;
-    
-    text-decoration: none;
-}
-.footer-nav-item a:visited {
-    color: black;
-}
-.footer-nav-item a[href]:hover,
-.footer-nav-item a[href]:focus-visible {
-    color: black;
-    opacity: 0.6;
-    border-bottom: #000000 1px solid;
-}
-.footer-nav-item a[href]:active {
-    color: black;
-    opacity: 0.4;
-    border-bottom: rgba(0, 0, 0, 0.5) 1px solid;
 }

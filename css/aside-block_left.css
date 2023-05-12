@@ -28,10 +28,10 @@
 
 .aside-block_left a:hover,
 .aside-block_left a:focus-visible {
-    opacity: 0.6;
+    border: none;
 }
 .aside-block_left a:active {
-    opacity: 0.4;
+    border: none;
 }
 
 .aside-block_left img {

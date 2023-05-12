@@ -1,0 +1,42 @@
+.read-also {
+    /* margin: 70px auto 119px auto; */
+    margin-top: 100px;
+}
+
+.read-also__header {
+    font-family: 'Cormorant', 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 150%;
+    /* identical to box height, or 38px */
+
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.read-also__list {
+    display: flex;
+    justify-content: center;
+    gap: 40px
+}
+
+.read-also__link {
+    width: 235px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.read-also__name {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    line-height: 150%;
+    /* identical to box height, or 200% */
+}
+
+.read-also__pic {
+    display: block;
+    margin-bottom: 15px;
+}

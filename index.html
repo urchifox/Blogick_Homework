@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/main-header.css">
     <link rel="stylesheet" href="css/aside-block_left.css">
-    <link rel="stylesheet" href="css/post-text_aside-float.css">
+    <link rel="stylesheet" href="css/restaurants.css">
+    <link rel="stylesheet" href="css/excursions.css">
+    <link rel="stylesheet" href="css/read-also.css">
     <link rel="stylesheet" href="css/main.footer.css">
 </head>
 <body>
@@ -148,12 +150,12 @@
                             <h2 class="post-heading">
                                 Вкусная еда
                             </h2>
-                            <div class="post-text_aside-float">
+                            <div class="restaurants">
                                 <p>Рестораны Грузии</p>
-                                <div class="post-text_aside-float-img  columns-container">
-                                    <button class="arrow-previous" type="button" disabled></button>
+                                <div class="restaurants-img  columns-container">
+                                    <button class="restaurants__previous-btn" type="button" disabled></button>
                                     <img src="img/resoraunts-pic.jpg" width="94px" height="94px" alt="">
-                                    <button class="arrow-next" type="button"></button>
+                                    <button class="restaurants__next-btn" type="button"></button>
                                 </div>
                                 <a href="">
                                     <p>Grand cafe</p>
@@ -186,10 +188,208 @@
                 </li>
             </ul>
 
+            <article class="excursions">
+                <h2 class="excursions__header">Экскурсии по Грузии:</h2>
+                <ul class="excursionns__list">
+                    <li class="excursions__item">
+                        <a href="" class="excursion__link">
+                            <h3 class="excursion__name">
+                                Экскурсия в горы
+                            </h3>
+                            <img src="img/excursions-pic-1.jpg" alt="Экскурсия в горы" width="277.53px" height="160.73px" class="excursion__pic">
+                        </a>
+                    </li>
+                    <li class="excursions__item">
+                        <a href="" class="excursion__link">
+                            <h3 class="excursion__name">
+                                Экскурсия к монастырям
+                            </h3>
+                            <img src="img/excursions-pic-2.jpg" alt="Экскурсия к монастырям" width="277.53px" height="160.73px" class="excursion__pic">
+                        </a>
+                    </li>
+                    <li class="excursions__item">
+                        <a href="" class="excursion__link">
+                            <h3 class="excursion__name">
+                                Экскурсия к древностям
+                            </h3>
+                            <img src="img/excursions-pic-3.jpg" alt="Экскурсия к древностям" width="277.53px" height="160.73px" class="excursion__pic">
+                        </a>
+                    </li>
+                    <li class="excursions__item">
+                        <a href="" class="excursion__link">
+                            <h3 class="excursion__name">
+                            Экскурсия по городу
+                            </h3>
+                            <img src="img/excursions-pic-4.jpg" alt="Экскурсия по городу" width="277.53px" height="160.73px" class="excursion__pic">
+                        </a>
+                    </li>
+                </ul>
 
-            
+                <div class="excursionns__pagination">
+                    <button class="excursionns__previous-btn" type="button" disabled></button>
+                    <div class="excursionns__pages">
+                        <span>1</span>
+                        <span class="visually-hidden">из</span>
+                        <span>4</span>
+                    </div>
+                    <button class="excursionns__next-btn" type="button" ></button>
+                </div>
+                
+                <a href="" class="excursionns__see-more">Смотреть все экскурсии</a>
+            </article>
+
+            <ul class="rules-list">
+                <li class="rule-item">
+                    <section class="post-part ">
+                        <div class="container-700">
+                            <h2 class="post-heading">
+                                Хорошее вино
+                            </h2>
+                            <p class="post-text">
+                                Грузия считается родиной вина, и здесь принято говорить: «Плохого вина не бывает. Бывает только хорошее и очень хорошее вино!». Однако, нужно понимать, что и здесь вы можете купить не очень хорошее вино.
+                            </p>
+                            <div class="columns-container">
+                                <img src="img/article-pic-5.jpg" width="343px" height="216px" alt="" class="post-pic">
+                                <div>
+                                    <div class="three-dots">
+                                        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                                    </div>
+                                    <p class="post-text_aside">
+                                        Не стоит брать вино в туристических местах. Если покупаете домашние вина, берите ту бутылку, из которой вам наливали на пробу.
+                                    </p>
+                                    <div class="three-dots">
+                                        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </li>
+                <li class="rule-item">
+                    <section class="post-part ">
+                        <div class="container-700">
+                            <h2 class="post-heading">
+                                Не говорите о политике
+                            </h2>
+                            <blockquote class="post-quote">
+                                <p>«Нам досталось немало грехов из грузинской истории, которые мы должны взять на себя. Этого нам вполне достаточно, не следует принимать на свои плечи еще и грехи русской истории.»</p>
+                                <cite>М. Мамардашвили, выдающийся философ XX века.</cite>
+                            </blockquote>
+                            <p class="post-text">
+                                «Все плохое происходит от политиков» – Так говорят в Грузии. Вы приехали отдыхать, а не обсуждать политические игры и доказывать свою правоту. Просто опустите эти темы и проведите отпуск счастливо.
+                            </p>
+                        </div>
+                    </section>
+                </li>
+                <li class="rule-item">
+                    <section class="post-part ">
+                        <div class="container-700">
+                            <h2 class="post-heading">
+                                Не ругайтесь
+                            </h2>
+                            <img class="float" src="img/article-pic-7.png" width="137.66px" height="139px" alt="Не ругайтесь">
+                            <p class="post-text">
+                                Мат и ненормативная лексика понятны не только старшему поколению, знающему русский, но и всему остальному населению, и воспринимается очень негативно. Не стоит использовать мат как в обращении к грузинам, так и в общении друг с другом. <br> 
+                                Если ругаться при грузинах, они не просто за это «по голове не погладят», реакция может быть абсолютно непредсказуемая, вплоть до драки, а Вам, наверняка, не нужны лишние проблемы в отпуске :).
+                            </p>
+                        </div>
+                    </section>
+                </li>
+                <li class="rule-item">
+                    <section class="post-part ">
+                        <div class="container-700">
+                            <h2 class="post-heading">
+                                Наркотики в Грузии
+                            </h2>
+                            <p class="post-text">
+                                Не стоит баловаться наркотическими веществами в Грузии. Несмотря на то, что в законодательство внесены предложения на легализацию легких наркотиков, грузинская полиция серьезно следит за такими правонарушениями.                            </p>
+                        </div>
+                    </section>
+                </li>
+                <li class="rule-item">
+                    <section class="post-part ">
+                        <div class="container-700">
+                            <h2 class="post-heading">
+                                Не все знают русский язык
+                            </h2>
+                            <p class="post-text">
+                                Несмотря на то, что Грузия является территорией постсоветского пространства, здесь далеко не всего знают русский. Как правило, на русском языке говорят люди старшего возраста, а молодёжь лучше знает английский язык.                        </div>
+                    </section>
+                </li>
+                <li class="rule-item">
+                    <section class="post-part ">
+                        <div class="container-700">
+                            <h2 class="post-heading">
+                                Грузинские мужчины не женятся на второй день знакомства
+                            </h2>
+                            <p class="post-text">
+                                Да и вообще редко женятся на девушках не своей национальности. Яркие, харизматичные и горячие грузинские кавалеры будут ухаживать за вами как никто, звать замуж и обещать золотые горы. Но стоит помнить, что это всего лишь романтическое приключение длинной в ваш отпуск. Не более того.                        </div>
+                    </section>
+                </li>
+            </ul>
+            <p  class="article-footer container-700">Любите ли вы Грузию?</p>
+        </article> 
+        
+        <ul class="suggestions-list container-700">
+            <li class="suggestion-item">
+                <a href="">грузия</a>
+            </li>
+            <li class="suggestion-item">
+                <a href="">путешествия</a>
+            </li>
+            <li class="suggestion-item">
+                <a href="">турне</a>
+            </li>
+            <li class="suggestion-item">
+                <a href="">тбилиси</a>
+            </li>
+            <li class="suggestion-item">
+                <a href="">полезные советы</a>
+            </li>
+        </ul>
+
+        <article class="read-also">
+            <div class="three-dots">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            </div>
+            <h2 class="read-also__header">Читайте также:</h2>
+            <ul class="read-also__list">
+                <li class="read-also__item">
+                    <a href="" class="read-also__link">
+                        <h3 class="read-also__name">
+                            Пассивный дом
+                        </h3>
+                        <img src="img/read-also-pic-1.jpg" alt="Экскурсия в горы" width="235px" height="131px" class="excursion__pic">
+                    </a>
+                </li>
+                <li class="read-also__item">
+                    <a href="" class="read-also__link">
+                        <h3 class="read-also__name">
+                            История религии в Грузии
+                        </h3>
+                        <img src="img/read-also-pic-2.jpg" alt="Экскурсия к монастырям" width="235px" height="131px" class="excursion__pic">
+                    </a>
+                </li>
+                <li class="read-also__item">
+                    <a href="" class="read-also__link">
+                        <h3 class="read-also__name">
+                            Куда полететь в свой долгожданный отпуск?
+                        </h3>
+                        <img src="img/read-also-pic-3.jpg" alt="Экскурсия к древностям" width="235px" height="131px" class="excursion__pic">
+                    </a>
+                </li>
+                <li class="read-also__item">
+                    <a href="" class="read-also__link">
+                        <h3 class="read-also__name">
+                            Электрическое отопление в частном доме
+                        </h3>
+                        <img src="img/read-also-pic-4.jpg" alt="Экскурсия по городу" width="235px" height="131px" class="excursion__pic">
+                    </a>
+                </li>
+            </ul>
 
         </article>
+
     </main>
 
     <footer class="main-footer">

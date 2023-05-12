@@ -1,0 +1,108 @@
+.excursions {
+    margin: 70px auto 119px auto;
+    position: relative;
+}
+
+.excursions__header {
+    font-family: 'Cormorant', 'Times New Roman', serif;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 150%;
+    /* identical to box height, or 38px */
+
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.excursionns__list {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 18px;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.excursion__link {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.excursion__name {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+}
+
+.excursion__pic {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.excursionns__pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button[class^="excursionns__"] {
+    width: 30px;
+    height: 10px;
+    /* padding: 9px 18px;
+    box-sizing: border-box; */
+    border: none;
+    background-color: transparent;
+    background-image: url("../img/arrow-medium.svg");
+    background-size: 30px 10px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    cursor: pointer;
+    /* outline: auto; */
+}
+.excursionns__previous-btn {
+    transform: rotate(180deg);
+}
+
+.excursionns__pages {
+    margin: 0 20px;
+}
+.excursionns__pages span:nth-of-type(3) {
+    margin-left: -6px;
+}
+.excursionns__pages span::before {
+    content: "0";
+}
+.excursionns__pages span:nth-child(1):after {
+    content: "/";
+}
+
+.excursionns__see-more {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+    text-decoration: none;
+    padding-right: 86px;
+
+    color: #000000;
+}
+.excursionns__see-more::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 66px;
+    height: 10px;
+    background-image: url("../img/arrow-long.svg");
+    background-repeat: no-repeat;
+    background-size: 66px 10px;
+}
