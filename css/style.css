@@ -49,6 +49,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 30px
 }
 
 .three-dots {
@@ -260,12 +261,13 @@ h1 {
 }
 
 .post-text_aside {
-    font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     text-align: center;
     width: 327px;
+    font-weight: 400;
 }
+
 
 .post-quote {
     border-left: 5px solid black;
@@ -331,11 +333,11 @@ h1 {
     margin-bottom: 30px;
     margin-top: 56px;
 }
-.suggestion-item {
+.tag-item {
     margin-bottom: 10px;
 
 }
-.suggestion-item a {
+.tag-item a {
     font-weight: 400;
     font-size: 20px;
     line-height: 150%;
@@ -343,16 +345,16 @@ h1 {
     text-decoration-line: underline;
     color: #0094FF;
 }
-.suggestion-item a:visited {
+.tag-item a:visited {
     color: #0094FF;
 }
-.suggestion-item a[href]:hover,
-.suggestion-item a[href]:focus-visible {
+.tag-item a[href]:hover,
+.tag-item a[href]:focus-visible {
     color: #0094FF;
     opacity: 0.6;
     border-bottom: none;
 }
-.suggestion-item a[href]:active {
+.tag-item a[href]:active {
     color: #0094FF;
     opacity: 0.4;
     border-bottom: none;
