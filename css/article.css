@@ -48,7 +48,7 @@ h1 {
     font-size: 16px;
     line-height: 170%;
     padding-left: 35px;
-
+    margin: 0;
     background-repeat: no-repeat;
     background-position: 0 center;
 }
