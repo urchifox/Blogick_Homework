@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,600;0,700;1,500&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/article.css">
     <link rel="stylesheet" href="css/main-header.css">
     <link rel="stylesheet" href="css/aside-block_left.css">
     <link rel="stylesheet" href="css/restaurants.css">
@@ -20,8 +21,7 @@
     <header class="main-header container-1200 ">
         <nav class="main-nav">
             <a href="index.html" class="main-nav__logo">
-                <img src="img/logo.svg" alt="Логотип компании Блогик" class="logo" width="53px"
-                height="22px">
+                <img src="img/logo.svg" alt="Логотип компании Блогик" class="logo" width="53" height="22">
             </a>
             <ul class="menu">
                 <li class="menu-item">
@@ -64,14 +64,19 @@
             <header class="article-header">
                 <div class="article-header_container">
                     <h1>10 золотых правил для поездки в Грузию</h1>
-                    <img src="img/lead-picture.jpg" alt="Вид на серные бани Тбилиси" class="lead-pic" height="316px" width="1169px">
+                    <img src="img/lead-picture.jpg" alt="Вид на серные бани Тбилиси" class="lead-pic" height="316" width="1169">
                 </div>
                 
-                <ul class="meta-info">
-                   <li class="meta-item-date"><time datetime="2019-12-26">26 декабря 2019</time></li> 
-                   <li class="meta-item-time">15 мин</li> 
-                   <li class="meta-item-views">16 129</li> 
-                </ul>
+                <dl class="meta-info">
+                    <dt class="meta-item visually-hidden">Дата публикации</dt>
+                    <dd class="meta-item-date"><time datetime="2019-12-26">26 декабря 2019</time></dd> 
+                    
+                    <dt class="meta-item visually-hidden">Время прочтения</dt>
+                    <dd class="meta-item-time">15 мин</dd> 
+                    
+                    <dt class="meta-item visually-hidden">Количество просмотров</dt>
+                    <dd class="meta-item-views">16129</dd> 
+                </dl>
             </header>
 
             <div class="three-dots">
@@ -85,13 +90,7 @@
             </div>
             
             <ul class="rules-list">
-                <li class="rule-item">
-                    <aside class="aside-block_left">
-                        <p>Поделиться в соцсетях</p>
-                        <a href=""><img src="img/vk.svg" alt="Вконтакте"></a>
-                        <a href=""><img src="img/fb.svg" alt="Facebook"></a>
-                        <a href=""><img src="img/inst.svg" alt="Instagram"></a>
-                    </aside>
+                <li class="rule-item"> 
                     <section class="post-part ">
                         <div class="container-700">
                             <h2 class="post-heading">
@@ -101,7 +100,7 @@
                                 Очень часто встречаются отзывы, что нет никакого грузинского гостеприимства.  Чаще всего - от людей, которые сами не умеют дружить и быть радушными.
                             </p>
                             <div class="columns-container">
-                                <img src="img/article-pic-1.jpg" width="343px" height="216px" alt="" class="post-pic">
+                                <img src="img/article-pic-1.jpg" width="343" height="216" alt="Мужчина с лошадью на фоне гор" class="post-pic">
                                 <div>
                                     <div class="three-dots">
                                         <span class="dot"></span><span class="dot"></span><span class="dot"></span>
@@ -118,6 +117,20 @@
                             </div>
                         </div>
                     </section>
+                    <aside class="aside-block_left">
+                        <h2>Поделиться в соцсетях</h2>
+                        <ul class="socials-list">
+                            <li class="social-item">                                
+                                <a href=""><img src="img/vk.svg" alt="Вконтакте"></a>
+                            </li>
+                            <li class="social-item">                                
+                                <a href=""><img src="img/fb.svg" alt="Facebook"></a>
+                            </li>
+                            <li class="social-item">                                
+                                <a href=""><img src="img/inst.svg" alt="Instagram"></a>
+                            </li>
+                        </ul>
+                    </aside>
                 </li>
                 <li class="rule-item">
                     <section class="post-part ">
@@ -128,40 +141,30 @@
                             <p class="post-text">
                                 Чтобы не разочароваться в экскурсионной программе, стоит заранее позаботиться о выборе гида. К сожалению, в Грузии нет обязательной сертификации гидов и экскурсионных бюро, поэтому есть вероятность нарваться на непрофессионалов.
                             </p>
-                            <img src="img/article-pic-2.jpg" width="" height="" alt="" class="post-pic">
+                            <img src="img/article-pic-2.jpg" width="304" height="453" alt="Древняя грузинская церковь" class="post-pic">
                         </div>
                     </section>
                 </li>
                 <li class="rule-item">
                     <section class="post-part ">
                         <div class="container-700">
-                            <aside class="aside-block_left">
-                                <div class="three-dots">
-                                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                                </div>
-                                <p>Понравилась статья?
-                                    Оцени ее.</p>
-                                <div class="aside-block_left__likes">
-                                    <a href=""><img src="img/like-icon.svg" alt="Понравилась"></a>
-                                    <a href=""><img src="img/like-icon.svg" alt="Не понравилась"></a>
-                                </div>
-                                <div class="three-dots">
-                                    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-                                </div>
-                            </aside>
                             <h2 class="post-heading">
                                 Вкусная еда
-                            </h2>
+                            </h2>                       
                             <div class="restaurants">
-                                <p>Рестораны Грузии</p>
-                                <div class="restaurants-img  columns-container">
-                                    <button class="restaurants__previous-btn" type="button" disabled></button>
-                                    <img src="img/resoraunts-pic.jpg" width="94px" height="94px" alt="">
-                                    <button class="restaurants__next-btn" type="button"></button>
-                                </div>
-                                <a href="">
-                                    <p>Grand cafe</p>
-                                </a>
+                                <h3>Рестораны Грузии</h3>
+                                <figure>
+                                    <div class="restaurants-img">
+                                        <button class="restaurants__previous-btn" aria-label="Посмотреть предыдущий ресторан" type="button" disabled></button>
+                                        <img src="img/resoraunts-pic.jpg" width="94" height="94" alt="Вид на грузинское кафе">
+                                        <button class="restaurants__next-btn" aria-label="Посмотреть следующий ресторан" type="button"></button>
+                                    </div>
+                                    <figcaption class="restaurants-name">
+                                        <a href="">
+                                            Grand cafe
+                                        </a>
+                                    </figcaption>
+                                </figure>
                             </div>
                             <p class="post-text">
                                 Многие полагают, что в Грузии они смогут есть вкусную еду и пить вино на каждом шагу, при этом тратя на это сущие копейки. Это не так.
@@ -169,11 +172,24 @@
                             <p>
                                 В Грузии действительно можно найти недорогие и хорошие кафе, а также рестораны, но для этого нужно читать отзывы и рекомендации. Так вы не разочаруетесь в грузинской кухне и не получите пищевое отравление, а вместоэтого приобретете только приятные впечатления и сытость для прогулок.
                             </p>
-
-
-                            <img src="img/article-pic-3.jpg" width="" height="" alt="" class="post-pic">
+                            <img src="img/article-pic-3.jpg" width="304" height="453" alt="Грузинская еда" class="post-pic">
                         </div>
                     </section>
+                    <aside class="aside-block_left">
+                        <div class="three-dots">
+                            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        </div>
+                        <h2>Понравилась статья? Оцени ее.</h2>
+                        <div class="aside-block_left__likes">
+                            <button class="like-btn" aria-label="Оценить публикацию положительно" type="button">
+                            </button>
+                            <button class="dislike-btn" aria-label="Оценить публикацию негативно" type="button">
+                            </button>
+                        </div>
+                        <div class="three-dots">
+                            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                        </div>
+                    </aside>
                 </li>
                 <li class="rule-item">
                     <section class="post-part ">
@@ -198,7 +214,7 @@
                             <h3 class="excursion__name">
                                 Экскурсия в горы
                             </h3>
-                            <img src="img/excursions-pic-1.jpg" alt="Экскурсия в горы" width="277.53px" height="160.73px" class="excursion__pic">
+                            <img src="img/excursions-pic-1.jpg" alt="Грузинский монастырь на фоне гор" width="277.53" height="160.73" class="excursion__pic">
                         </a>
                     </li>
                     <li class="excursions__item">
@@ -206,7 +222,7 @@
                             <h3 class="excursion__name">
                                 Экскурсия к монастырям
                             </h3>
-                            <img src="img/excursions-pic-2.jpg" alt="Экскурсия к монастырям" width="277.53px" height="160.73px" class="excursion__pic">
+                            <img src="img/excursions-pic-2.jpg" alt="Грузинская церковь на закате" width="277.53" height="160.73" class="excursion__pic">
                         </a>
                     </li>
                     <li class="excursions__item">
@@ -214,7 +230,7 @@
                             <h3 class="excursion__name">
                                 Экскурсия к древностям
                             </h3>
-                            <img src="img/excursions-pic-3.jpg" alt="Экскурсия к древностям" width="277.53px" height="160.73px" class="excursion__pic">
+                            <img src="img/excursions-pic-3.jpg" alt="Арка дружбы и пролетающий мимо параглайдер" width="277.53" height="160.73" class="excursion__pic">
                         </a>
                     </li>
                     <li class="excursions__item">
@@ -222,19 +238,19 @@
                             <h3 class="excursion__name">
                             Экскурсия по городу
                             </h3>
-                            <img src="img/excursions-pic-4.jpg" alt="Экскурсия по городу" width="277.53px" height="160.73px" class="excursion__pic">
+                            <img src="img/excursions-pic-4.jpg" alt="Вечерний Тбилиси" width="277.53" height="160.73" class="excursion__pic">
                         </a>
                     </li>
                 </ul>
 
                 <div class="excursionns__pagination">
-                    <button class="excursionns__previous-btn" type="button" disabled></button>
+                    <button class="excursionns__previous-btn" aria-label="Посмотреть предыдущий набор экскурсий" type="button" disabled></button>
                     <div class="excursionns__pages">
                         <span>1</span>
                         <span class="visually-hidden">из</span>
                         <span>4</span>
                     </div>
-                    <button class="excursionns__next-btn" type="button" ></button>
+                    <button class="excursionns__next-btn" aria-label="Посмотреть следующий набор экскурсий" type="button" ></button>
                 </div>
                 
                 <a href="" class="excursionns__see-more">Смотреть все экскурсии</a>
@@ -251,7 +267,7 @@
                                 Грузия считается родиной вина, и здесь принято говорить: «Плохого вина не бывает. Бывает только хорошее и очень хорошее вино!». Однако, нужно понимать, что и здесь вы можете купить не очень хорошее вино.
                             </p>
                             <div class="columns-container">
-                                <img src="img/article-pic-5.jpg" width="343px" height="216px" alt="" class="post-pic">
+                                <img src="img/article-pic-5.jpg" width="343" height="216" alt="Люди чокаются бокалами с красным вином" class="post-pic">
                                 <div>
                                     <div class="three-dots">
                                         <span class="dot"></span><span class="dot"></span><span class="dot"></span>
@@ -291,7 +307,7 @@
                             <h2 class="post-heading">
                                 Не ругайтесь
                             </h2>
-                            <img class="float" src="img/article-pic-7.png" width="137.66px" height="139px" alt="Не ругайтесь">
+                            <img class="float" src="img/article-pic-7.png" width="137.66" height="139" alt="У нас не матерятся">
                             <p class="post-text">
                                 Мат и ненормативная лексика понятны не только старшему поколению, знающему русский, но и всему остальному населению, и воспринимается очень негативно. Не стоит использовать мат как в обращении к грузинам, так и в общении друг с другом. <br> 
                                 Если ругаться при грузинах, они не просто за это «по голове не погладят», реакция может быть абсолютно непредсказуемая, вплоть до драки, а Вам, наверняка, не нужны лишние проблемы в отпуске :).
@@ -363,7 +379,7 @@
                         <h3 class="read-also__name">
                             Пассивный дом
                         </h3>
-                        <img src="img/read-also-pic-1.jpg" alt="Экскурсия в горы" width="235px" height="131px" class="excursion__pic">
+                        <img src="img/read-also-pic-1.jpg" alt="Современный элитный коттедж" width="235" height="131" class="excursion__pic">
                     </a>
                 </li>
                 <li class="read-also__item">
@@ -371,7 +387,7 @@
                         <h3 class="read-also__name">
                             История религии в Грузии
                         </h3>
-                        <img src="img/read-also-pic-2.jpg" alt="Экскурсия к монастырям" width="235px" height="131px" class="excursion__pic">
+                        <img src="img/read-also-pic-2.jpg" alt="Древний каменный крест на фоне леса и гор" width="235" height="131" class="excursion__pic">
                     </a>
                 </li>
                 <li class="read-also__item">
@@ -379,7 +395,7 @@
                         <h3 class="read-also__name">
                             Куда полететь в свой долгожданный отпуск?
                         </h3>
-                        <img src="img/read-also-pic-3.jpg" alt="Экскурсия к древностям" width="235px" height="131px" class="excursion__pic">
+                        <img src="img/read-also-pic-3.jpg" alt="Самолет в небе" width="235" height="131" class="excursion__pic">
                     </a>
                 </li>
                 <li class="read-also__item">
@@ -387,7 +403,7 @@
                         <h3 class="read-also__name">
                             Электрическое отопление в частном доме
                         </h3>
-                        <img src="img/read-also-pic-4.jpg" alt="Экскурсия по городу" width="235px" height="131px" class="excursion__pic">
+                        <img src="img/read-also-pic-4.jpg" alt="Стильная современная кухня" width="235" height="131" class="excursion__pic">
                     </a>
                 </li>
             </ul>
@@ -397,7 +413,7 @@
     </main>
 
     <footer class="main-footer">
-        <nav class="footer-nav container-1200">
+        <div class="footer-nav container-1200">
             <ul class="footer-nav-list">
                 <li class="footer-nav-item">
                     <a href="#">
@@ -430,7 +446,7 @@
                     </a>
                 </li>
             </ul>
-        </nav>
+        </div>
     </footer>
 
 </body>

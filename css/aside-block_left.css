@@ -12,7 +12,7 @@
     /* outline: auto; */
 }
 
-.aside-block_left p {
+.aside-block_left h2 {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -24,6 +24,12 @@
     margin: 0;
     margin-bottom: 20px;
     /* outline: auto; */
+}
+
+.socials-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .aside-block_left a:hover,
@@ -43,10 +49,16 @@
     display: flex;
     gap: 27px;
 }
-.aside-block_left__likes img {
-    display: block;
-    margin: 0;
+
+
+.like-btn,
+.dislike-btn {
+    width: 28px;
+    height: 28px;
+    background-image: url("../img/like-icon.svg");
+    background-size: 28px 28px;
+    background-position: center;
 }
-.aside-block_left__likes a:nth-child(2) img {
+.dislike-btn {
     transform: rotate(180deg) translateY(-10px);
 }

@@ -9,22 +9,28 @@
     border-radius: 0 60px 0 60px;
     padding: 20px 0;
 }
-.restaurants p {
+.restaurants h3,
+.restaurants .restaurants-name  {
     font-family: 'Cormorant', 'Times New Roman', serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 150%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    text-align: center;
 }
 .restaurants-img {
     margin: 16px 0 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 .restaurants img {
     display: block;
     border-radius: 50%;
     border:  #6BB9B5 5px solid;
-    margin: 0px 20px;
+    margin: 0;
     position: relative;
 }
 
@@ -42,3 +48,4 @@
     background-size: 20px 10px;
     transform: rotate(180deg);
 }
+
